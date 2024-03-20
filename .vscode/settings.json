@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/1887926b-1a8b-4c19-80a8-f758a582d4db/resourceGroups/softmediaLinux/providers/Microsoft.Web/sites/prueba3D",
+    "appService.deploySubpath": "."
+}

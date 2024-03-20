@@ -1,0 +1,17 @@
+<ngt-canvas [shadows]="true" [scene]="{ background: 'white' | color }">
+  <ngt-ambient-light [intensity]="0.6"></ngt-ambient-light>
+
+  <ngt-primitive
+    *ngIf="hospital$ | async as hospital"
+    [object]="hospital.scene"
+    (ready)="hospitalLoaded($event)"
+  >
+  </ngt-primitive>
+  <ngt-soba-orbit-controls
+    #controls="ngtSobaOrbitControls"
+    [target]="[0, 3, 0]"
+    (ready)="controlsReady(controls)"
+  ></ngt-soba-orbit-controls>
+
+</ngt-canvas>
+<ngt-soba-loader></ngt-soba-loader>
